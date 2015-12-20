@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>db_insert</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.db_insert</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>db_verify</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.db_verify</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>db_register</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.db_register</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>db_delete</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.db_delete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>db_edit</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.db_edit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>db_show</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.db_show</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>db_find</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.db_find</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>main_dl</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.main_dl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletUtils</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.ServletUtils</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>main_mail</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.main_mail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>db_changepwd</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.db_changepwd</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>db_insert</servlet-name>
+    <url-pattern>/db_insert</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>db_verify</servlet-name>
+    <url-pattern>/db_verify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>db_register</servlet-name>
+    <url-pattern>/db_register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>db_delete</servlet-name>
+    <url-pattern>/db_delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>db_edit</servlet-name>
+    <url-pattern>/db_edit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>db_show</servlet-name>
+    <url-pattern>/db_show</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>db_find</servlet-name>
+    <url-pattern>/db_find</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>main_dl</servlet-name>
+    <url-pattern>/main_dl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletUtils</servlet-name>
+    <url-pattern>/ServletUtils</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>main_mail</servlet-name>
+    <url-pattern>/main_mail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>db_changepwd</servlet-name>
+    <url-pattern>/db_changepwd</url-pattern>
+  </servlet-mapping>
+
+</web-app>
