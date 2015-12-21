@@ -40,8 +40,8 @@ public class Mail_Send {
         String to = mb.getTo();
         String subject = mb.getSubject();
         String content = mb.getContent();
-//        String fileName = mb.getFilename();
-//        Vector<String> file = mb.getFile();
+        String fileName = mb.getFilename();
+        Vector<String> file = mb.getFile();
         
         
         Properties props = System.getProperties();
@@ -66,8 +66,8 @@ public class Mail_Send {
             mbpContent.setText(content);
             mp.addBodyPart(mbpContent);
 
-            /*    往邮件中添加附件    */
-/*            Enumeration<String> efile = file.elements();
+
+            Enumeration<String> efile = file.elements();
             while (efile.hasMoreElements()) {
                 MimeBodyPart mbpFile = new MimeBodyPart();
                 fileName = efile.nextElement().toString();
@@ -77,7 +77,7 @@ public class Mail_Send {
                 mp.addBodyPart(mbpFile);
 
             }
-*/
+
             msg.setContent(mp);
             msg.setSentDate(new Date());
             Transport.send(msg);

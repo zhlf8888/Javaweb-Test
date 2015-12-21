@@ -21,7 +21,7 @@ public class Mail_Test {
         mb.setContent("[BISTU] 有人要求为您以下的Javaweb实践账号重置密码。 用户名：  "+n+"，若是您本人操作，请点击以下链接设置新密码：http://bistu.aliapp.com/lost_change.jsp?name="+n+"&password="+p+"（本地测试请入：http://bistu.aliapp.com/lost_change.jsp?name="+n+"&password="+p+"）。提示：若非本人操作，请忽略该消息！     ——Mr.ZLF "+y+"."+ym+"."+new Date().getDate()+" "+new Date().getHours()+":"+new Date().getMinutes()+":"+new Date().getSeconds()+"");        // 设置邮件的正文
 
         
-//        mb.attachFile("http://zhlf7777-blog.stor.sinaapp.com/data.txt");
+        mb.attachFile("http://zhlf7777-blog.stor.sinaapp.com/data.txt");
         
         Mail_Send sm = new Mail_Send();	 
         System.out.println("(正在发送邮件...)");

@@ -22,7 +22,6 @@ import com.bistu.javaweb.factory.UserDAOFactory;
 
 
 public class db_verify extends HttpServlet {
-	
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -62,8 +61,6 @@ public class db_verify extends HttpServlet {
 			e1.printStackTrace();
 		}
 	}
-
-
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		doGet(request, response);

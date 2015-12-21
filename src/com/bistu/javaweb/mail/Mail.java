@@ -71,7 +71,7 @@ public class Mail {
     public void setContent(String content) {
         this.content = content;
     }
-/*
+
     public String getFilename() {
         return filename;
     }
@@ -89,7 +89,7 @@ public class Mail {
             file = new Vector<String>();
         file.addElement(fileName);
     }
-*/
+
 	public String getRqname() {
 		return rqname;
 	}
