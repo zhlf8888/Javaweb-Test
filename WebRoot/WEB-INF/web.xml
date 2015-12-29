@@ -69,6 +69,13 @@
     <servlet-name>db_changepwd</servlet-name>
     <servlet-class>com.bistu.javaweb.servlet.db_changepwd</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>filter</servlet-name>
+    <servlet-class>com.bistu.javaweb.servlet.filter</servlet-class>
+  </servlet>
+
 
 
 
@@ -123,6 +130,10 @@
   <servlet-mapping>
     <servlet-name>db_changepwd</servlet-name>
     <url-pattern>/db_changepwd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>filter</servlet-name>
+    <url-pattern>/servlet/filter</url-pattern>
   </servlet-mapping>
 
 </web-app>
