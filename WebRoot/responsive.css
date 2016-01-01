@@ -48,7 +48,7 @@
 @media only screen and (max-width: 640px){
 		.container h1 {
 		margin-top:-90px;
-		font-size: 38 px;
+		font-size: 24 px;
 		
 	}
 	.form tip {
@@ -60,9 +60,9 @@
 	}
 	h78
 	.container h2 {
-		font-size:16px;
+		font-size:12px;
 	}
 	.container h3 {
-		font-size: 16px;
+		font-size: 12px;
 	}
 }
