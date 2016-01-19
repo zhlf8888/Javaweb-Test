@@ -12,7 +12,7 @@ public class DBConnection {
 */
 	private static String driverName = "com.mysql.jdbc.Driver";
 	private static String userName = "rpj40dlgw2e488n4";
-	private static String userPwd = "zhlf8888";
+	private static String userPwd = "";
 	private static String dbName = "rpj40dlgw2e488n4";
 
 	public static Connection getDBConnection() {
