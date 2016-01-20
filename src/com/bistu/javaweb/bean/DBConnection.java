@@ -11,9 +11,9 @@ public class DBConnection {
 	private static String dbName = "javaweb";
 */
 	private static String driverName = "com.mysql.jdbc.Driver";
-	private static String userName = "rpj40dlgw2e488n4";
+	private static String userName = "";
 	private static String userPwd = "";
-	private static String dbName = "rpj40dlgw2e488n4";
+	private static String dbName = "";
 
 	public static Connection getDBConnection() {
 		String url1 = "jdbc:mysql://rdsfu28pc2js13r5fz2k.mysql.rds.aliyuncs.com/" + dbName;
