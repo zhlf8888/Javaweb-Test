@@ -16,7 +16,7 @@ public class DBConnection {
 	private static String dbName = "";
 
 	public static Connection getDBConnection() {
-		String url1 = "jdbc:mysql://rdsfu28pc2js13r5fz2k.mysql.rds.aliyuncs.com/" + dbName;
+		String url1 = "jdbc:mysql://" + dbName;
 //		String url1 = "jdbc:mysql://SAE_MYSQL_HOST_M/" + dbName;
 		String url2 = "?user=" + userName + "&password=" + userPwd;
 		String url3 = "&userUnicode=true&characterEncoding=UTF-8";
