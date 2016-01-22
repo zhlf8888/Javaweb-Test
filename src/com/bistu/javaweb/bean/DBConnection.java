@@ -4,6 +4,7 @@ import java.sql.*;
 import com.mysql.jdbc.PreparedStatement;
 
 public class DBConnection {
+//Localhost£º
 /*	
 	private static String driverName = "com.mysql.jdbc.Driver";
 	private static String userName = "root";
@@ -17,7 +18,6 @@ public class DBConnection {
 
 	public static Connection getDBConnection() {
 		String url1 = "jdbc:mysql://" + dbName;
-//		String url1 = "jdbc:mysql://SAE_MYSQL_HOST_M/" + dbName;
 		String url2 = "?user=" + userName + "&password=" + userPwd;
 		String url3 = "&userUnicode=true&characterEncoding=UTF-8";
 		String url = url1 + url2 + url3;
