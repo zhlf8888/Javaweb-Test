@@ -11,30 +11,9 @@ import java.util.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
- 
-/**
- * A collection of static utility methods useful to servlets.
- * Some methods require Servlet API 2.2.
- *
- * @author <b>Jason Hunter</b>, Copyright &#169; 1998-2000
- * @version 1.5, 2001/02/11, added getResource() ".." check
- * @version 1.4, 2000/09/27, finalized getResource() behavior
- * @version 1.3, 2000/08/15, improved getStackTraceAsString() to take Throwable
- * @version 1.2, 2000/03/10, added getResource() method
- * @version 1.1, 2000/02/13, added returnURL() methods
- * @version 1.0, 1098/09/18
- */
+
 public class ServletUtils {
  
- 
-  /**
-   * Sends the contents of the specified file to the output stream
-   *
-   * @param filename the file to send
-   * @param out the output stream to write the file
-   * @exception FileNotFoundException if the file does not exist
-   * @exception IOException if an I/O error occurs
-   */
   public static void returnFile(String filename, OutputStream out)
                              throws FileNotFoundException, IOException {
  
@@ -59,14 +38,7 @@ public class ServletUtils {
 }
    
 }
- 
-  /**
-   * Sends the contents of the specified URL to the output stream
-   *
-   * @param URL whose contents are to be sent
-   * @param out the output stream to write the contents
-   * @exception IOException if an I/O error occurs
-   */
+
   public static void returnURL(URL url, OutputStream out) throws IOException {
  
     InputStream in = url.openStream();
@@ -79,15 +51,7 @@ public class ServletUtils {
 }
    
 }
- 
-  /**
-   * Sends the contents of the specified URL to the Writer (commonly either a
-   * PrintWriter or JspWriter)
-   *
-   * @param URL whose contents are to be sent
-   * @param out the Writer to write the contents
-   * @exception IOException if an I/O error occurs
-   */
+
   public static void returnURL(URL url, Writer out) throws IOException {
  
     // Determine the URL's content encoding
@@ -118,13 +82,7 @@ public class ServletUtils {
 }
    
 }
- 
-  /**
-   * Gets an exception's stack trace as a String
-   *
-   * @param e the exception
-   * @return the stack trace of the exception
-   */
+
   public static String getStackTraceAsString(Throwable t) {
  
     ByteArrayOutputStream bytes = new ByteArrayOutputStream();
@@ -133,20 +91,7 @@ public class ServletUtils {
     return bytes.toString();
    
 }
- 
-  /**
-   * Gets a reference to the named servlet, attempting to load it
-   * through an HTTP request if necessary.  Returns null if there's a problem.
-   * This method behaves similarly to <tt>ServletContext.getServlet()</tt>
-   * except, while that method may return null if the
-   * named servlet wasn't already loaded, this method tries to load
-   * the servlet using a dummy HTTP request.  Only loads HTTP servlets.
-   *
-   * @param name the name of the servlet
-   * @param req the servlet request
-   * @param context the servlet context
-   * @return the named servlet, or null if there was a problem
-   */
+
   public static Servlet getServlet(String name,
                                    ServletRequest req,
                                    ServletContext context) {
@@ -187,14 +132,7 @@ public class ServletUtils {
 }
    
 }
- 
-  /**
-   * Splits a String into pieces according to a delimiter.
-   *
-   * @param str the string to split
-   * @param delim the delimiter
-   * @return an array of strings containing the pieces
-   */
+
   public static String[] split(String str, String delim) {
  
     // Use a Vector to hold the splittee strings
@@ -218,18 +156,7 @@ public class ServletUtils {
     return ret;
    
 }
- 
-  /**
-   * Gets a reference to the given resource within the given context,
-   * making sure not to serve the contents of WEB-INF, META-INF, or to
-   * display .jsp file source.
-   * Throws an IOException if the resource can't be read.
-   *
-   * @param context the context containing the resource
-   * @param resource the resource to be read
-   * @return a URL reference to the resource
-   * @exception IOException if there's any problem accessing the resource
-   */
+
   public static URL getResource(ServletContext context, String resource)
                                        throws IOException {
  
