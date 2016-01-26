@@ -34,11 +34,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>
 			<br><br><br><br><br><br><br>
 			
-		    <a class="home-button-2 uppercase  semibold" href="register.jsp"> 注  册 </a>
+		    <a class="home-button-2 uppercase  semibold" href="register.jsp"> 马上注册 </a>
 		    &nbsp&nbsp&nbsp
-		    <a href="http://wpa.qq.com/msgrd?v=3&uin=904154180&site=qq&menu=yes" target="_blank" class="home-button-2 uppercase  semibold"> 联  系 </a>
+		    <a href="http://wpa.qq.com/msgrd?v=3&uin=904154180&site=qq&menu=yes" target="_blank" class="home-button-2 uppercase  semibold"> 联系作者 </a>
 		    &nbsp&nbsp&nbsp
-		    <a class="home-button-2 uppercase  semibold" href="lost.jsp"> 找  回</a>
+		    <a class="home-button-2 uppercase  semibold" href="lost.jsp"> 忘记密码</a>
 		</form>
 
 
