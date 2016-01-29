@@ -1,21 +1,13 @@
 package com.bistu.javaweb.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
-import java.sql.*;
-
-import com.bistu.javaweb.bean.*;
 import com.bistu.javaweb.dao.UserDAO;
 import com.bistu.javaweb.daoImpl.UserDAOImpl;
-import com.bistu.javaweb.domain.Data;
 import com.bistu.javaweb.domain.User;
 import com.bistu.javaweb.factory.UserDAOFactory;
 

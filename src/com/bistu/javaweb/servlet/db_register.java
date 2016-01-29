@@ -1,9 +1,6 @@
 package com.bistu.javaweb.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.bistu.javaweb.bean.DBUtil;
 import com.bistu.javaweb.dao.UserDAO;
 
-import java.security.MessageDigest;
 import com.bistu.javaweb.mail.*;
 
 public class db_register extends HttpServlet {
