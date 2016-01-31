@@ -19,14 +19,8 @@ public class main_mail extends HttpServlet {
 		String name = request.getParameter("userName");
 		RequestDispatcher dis = null;
 		
-//		Mail_isMail ism = new Mail_isMail();
-//		boolean ismrs = ism.isMail(mail);
-		
-//		if(ismrs) {
-			
 		UserDAOImpl n = UserDAOFactory.getUserDAOInstance();
 		try {
-//			User m = n.find_mail(mail);
 			User m = new User();
 			m.setName(name);
 			User mm = n.find(m);
@@ -35,8 +29,6 @@ public class main_mail extends HttpServlet {
 			
 			if(mm.getName() != "" && mm.getName() != null && mm.getPassword() != "" && mm.getPassword() != null && mm.getMail() != "" && mm.getMail() != null) {
 					
-//				Mail mmm = new Mail();
-//				mmm.setRqname(name);
 				Mail_Test mt = new Mail_Test();
 				boolean ms = mt.test(mm.getMail(),mm.getName(),mm.getPassword());
 
@@ -65,12 +57,6 @@ public class main_mail extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}	
-/*		} else {
-			
-			request.setAttribute("error", "«ÎÃÓ–¥’˝»∑µƒ” œ‰£°");
-			dis = request.getRequestDispatcher("lost.jsp");
-		}
-*/
 		dis.forward(request, response);
 	}
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
