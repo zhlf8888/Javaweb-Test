@@ -10,9 +10,9 @@ import com.bistu.javaweb.domain.Data;
 public class DataDAO implements DataDAOImpl {
 	protected static final String FIELDS_INSERT ="name,sex,relation,mobile,wechat";
 	protected static String INSERT_SQL = "insert into data("+FIELDS_INSERT+")"+"values(?,?,?,?,?)";
-	protected static String SELECT_SQL = "select"+FIELDS_INSERT+" from data where name=?";
+//	protected static String SELECT_SQL = "select"+FIELDS_INSERT+" from data where name=?";
 	protected static String UPDATE_SQL = "update data set sex=?,relation=?,mobile=?,wechat=? where name=?";
-	protected static String DELETE_SQL = "delete form data where name=?";
+//	protected static String DELETE_SQL = "delete form data where name=?";
 	
 	public Data creat(Data d) throws Exception {
 		Connection conn = null;
